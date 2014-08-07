@@ -46,7 +46,7 @@ class UsersController < ApplicationController
       session[:remember_token] = @user.id
       @current_user = @user
       respond_to do |format|
-        format.html {redirect_to :root}
+        format.html {redirect_to outfits_path}
         format.json {render json: @user, status: :created}
       end
     else

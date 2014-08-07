@@ -23,7 +23,7 @@
     </div><br>
     <div class="scroll">
       <div id="resultsfield" ng-repeat="outfit in outfits | filter:searchOutfit ">
-        <div id="workcontainer">
+        <div id="outfitcontainer">
           <div id="typeofclothing">
             <div class="outfitslabel"><p class="size"><strong>Type of Clothing</strong></p></div>
             <div class="content"><p>{{outfit.type_of_outfit}}</p></div>
@@ -51,7 +51,7 @@
           <br>
           <br>
           <div>
-            <span>
+            <span ng-hide="outfit.editing">
               <a ng-click="editOutfit(outfit);" class="btn btn-info"> EDIT </a>
             </span>
             <span ng-show="outfit.editing">
@@ -62,6 +62,8 @@
             </span>
           </div>
         </div>
+
+
         <div ng-show="outfit.editing" id="edit">
           <form class="form-group" id="outfits">
             <div>
@@ -85,8 +87,8 @@
             </div>
           
             <div>
-            <button type="submit" ng-click="updateOutfit(outfit)" class="btn btn-primary small">Update</button>
-            <button type="submit" ng-click="backOutfit(outfit)" class="btn btn-primary small">Back</button>
+            <button type="submit" ng-click="updateOutfit(outfit)" class="btn btn-primary large">Update</button>
+          <!--   <button type="submit" ng-click="backOutfit(outfit)" class="btn btn-primary small">Back</button> -->
             </div>
           </form>
         </div>

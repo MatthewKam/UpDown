@@ -10,12 +10,12 @@ class OutfitsController < ApplicationController
   end
 
   def edit
-    @outfit = Outfit.find(params[id])
+    @outfit = Outfit.find(params[:id])
   end
 
   def create
     @outfit = Outfit.new(set_params)
-    # @outfit.user_id = current_user.id
+    @outfit.user_id = current_user.id
     if @outfit.save
       respond_to do |format|
         format.html {redirect_to outfits_path}
@@ -31,13 +31,13 @@ class OutfitsController < ApplicationController
 
   def update
     @outfit = Outfit.find(params[:id])
-    if job.update_attributes(set_params)
+    if @outfit.update_attributes(set_params)
       respond_to do |format|
         format.html {redirect_to outfits_path}
         format.json {render nothing: :true, status: :no_content}
       end
     else
-      respond_to  do |format|
+      respond_to do |format|
         format.html {render 'edit'}
         format.json {render json: @outfit.errors, status: :unprocessable_entity}
       end

@@ -43,6 +43,8 @@ group :production do
 	gem 'rails_12factor'
 end
 
+
+gem 'foundation-rails'
 # Use unicorn as the app server
 # gem 'unicorn'
 

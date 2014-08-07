@@ -1,9 +1,5 @@
-<h1>Log In</h1>
-
 <%= form_for :session, :url => sessions_path do |f| %>
  <%= f.text_field :email, placeholder: "Email"%>
  <%= f.text_field :password, placeholder: "Password"%>
  <%= f.submit 'Done'%>
 <%end%>
-
-<%= link_to 'Not a user? Create an account', new_user_path %>
