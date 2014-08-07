@@ -21,11 +21,14 @@ gem 'coffee-rails', '~> 4.0.0'
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
+gem 'angularjs-rails'
+gem 'active_model_serializers'
+
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+# gem 'jbuilder', '~> 1.2'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -33,7 +36,12 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+gem 'bcrypt-ruby'
+gem 'rspec-rails'
+gem 'capybara'
+group :production do 
+	gem 'rails_12factor'
+end
 
 # Use unicorn as the app server
 # gem 'unicorn'

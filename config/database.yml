@@ -19,7 +19,7 @@ development:
   encoding: unicode
   database: UpDown_development
   pool: 5
-  username: UpDown
+  username: 
   password:
 
   # Connect on a TCP socket. Omitted by default since the client uses a
