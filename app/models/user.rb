@@ -1,7 +1,10 @@
-require "bcrypt"
+# require "bcrypt"
 class User < ActiveRecord::Base
   has_many :jobs
-  validates_presence_of :user_name, :name, :email, :password #, :phone_number, :reference_contact, :address, :city, :state, :zip
+  has_secure_password
+
+  validates_presence_of :email, :password, :password_confirmation
+  #, :phone_number, :reference_contact, :address, :city, :state, :zip
   # def password
   #     @password
   #   end
@@ -18,5 +21,4 @@ class User < ActiveRecord::Base
   #       false
   #     end
   #   end
-  has_secure_password
 end
