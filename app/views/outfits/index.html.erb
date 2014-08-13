@@ -34,7 +34,11 @@
       <div id="resultsfield" ng-repeat="outfit in outfits | filter:searchOutfit ">
         <div id="outfitcontainer">
           <div id="typeofclothing">
-            <div class="outfitslabel"><p class="size"><strong>Type of Clothing</strong></p></div>
+            <div class="outfitslabel"><p class="size">
+              <div>
+                <img src='{{outfit.thumb_url}}' />
+              </div>
+              <strong>Type of Clothing</strong></p></div>
             <div class="content"><p>{{outfit.type_of_outfit}}</p></div>
           </div>
           <div id="occasion">
@@ -42,7 +46,7 @@
             <div class="content"><p>{{outfit.occasion}}</p></div>
           </div>
           <div id="brand">
-            <div class="outfitslabel"><p class="size"><strong>Occasion</strong></p></div>
+            <div class="outfitslabel"><p class="size"><strong>Brand</strong></p></div>
             <div class="content"><p>{{outfit.brand}}</p></div>
           </div>
           <div id="price">
