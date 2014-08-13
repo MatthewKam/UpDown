@@ -1,6 +1,6 @@
 # require "bcrypt"
 class User < ActiveRecord::Base
-  has_many :jobs
+  has_many :outfits
   has_secure_password
 
   validates_presence_of :email, :password, :password_confirmation

@@ -10,7 +10,7 @@ class OutfitsController < ApplicationController
   end
 
   def edit
-    @outfit = Outfit.find(params[:id])
+    @outfit = current_user.outfits.find(params[:id])
   end
 
   def create
@@ -18,7 +18,7 @@ class OutfitsController < ApplicationController
     @outfit.user_id = current_user.id
     if @outfit.save
       respond_to do |format|
-        format.html {redirect_to outfits_path}
+        format.html {redirect_to @outfit }
         format.json {render json: @outfit, status: :created}
       end
     else
@@ -30,10 +30,10 @@ class OutfitsController < ApplicationController
   end
 
   def update
-    @outfit = Outfit.find(params[:id])
+    @outfit = current_user.outfits.find(params[:id])
     if @outfit.update_attributes(set_params)
       respond_to do |format|
-        format.html {redirect_to outfits_path}
+        format.html {redirect_to outfits_path }
         format.json {render nothing: :true, status: :no_content}
       end
     else
@@ -45,7 +45,7 @@ class OutfitsController < ApplicationController
   end
 
   def show
-    @outfit = Outfit.find(params[:id])
+    @outfit = current_user.outfits.find(params[:id])
     respond_with @outfit
   end
 
@@ -62,7 +62,7 @@ class OutfitsController < ApplicationController
 protected
 
   def set_params
-    params.require(:outfit).permit(:type_of_outfit, :occasion, :brand_name, :price, :accessories, :sender_comment)
+    params.require(:outfit).permit(:type_of_outfit, :occasion, :brand_name, :price, :accessories, :sender_comment, :photo)
   end
 end 
 

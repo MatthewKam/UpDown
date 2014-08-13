@@ -1,9 +1,20 @@
-<h1>Log In</h1>
-
-<%= form_for :session, :url => sessions_path do |f| %>
- <%= f.text_field :email, placeholder: "Email"%>
- <%= f.text_field :password, placeholder: "Password"%>
- <%= f.submit 'Done'%>
-<%end%>
-
-<%= link_to 'Not a user? Create an account', new_user_path %>
+<div class="containerli">
+	<div class="login">
+		
+		<div id="liform">
+			<h1>Log In</h1>
+			<%= form_for :session, :url => sessions_path do |f| %>
+				<%= f.text_field :email, placeholder: "Email"%>
+				<%= f.text_field :password, placeholder: "Password"%>
+				<%= f.submit 'Done'%>
+			<%end%>
+			<%= link_to 'Not a user? Create an account', new_user_path %>
+		</div>
+	</div>
+	<div id="about">
+		<h1>About</h1>
+	</div>
+	<div id="howitworks">
+		<h1>How It Works</h1>
+	</div>
+<div>

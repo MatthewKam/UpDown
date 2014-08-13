@@ -16,6 +16,15 @@
 <%#end%>
 <br>
  -->
+
+
+
+<%= form_for(Outfit.new , html: { multipart: true }) do |f|%>
+  <%= f.file_field :photo%>
+  <%= f.submit%>
+<%end%>
+
+
 <div ng-app="outfit-app" ng-controller="OutfitCtrl" class="container" >
     <h1 class="page_titles">OUTFITS</h1>
     <div class="form-group">
