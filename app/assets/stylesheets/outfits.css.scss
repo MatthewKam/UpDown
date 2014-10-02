@@ -1,6 +1,7 @@
 // Place all the styles related to the Outfits controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 .container{
 	text-align: center;
 }
@@ -10,8 +11,22 @@
 	width:200px;
 	text-align: center;
 }
-div#outfitimage {
+div #outfitimage {
 	margin-bottom: 15px;
+}
+.form-group {
+  width: 80%;
+  margin: 0 auto;
+}
+
+#outfitimage {
+  float: left;
+  height: 150px;
+  width: 100px;
+  border: 1px solid red;
+}
+#outfitcontainer {
+  border: 1px solid blue;
 }
 
 

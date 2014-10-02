@@ -1,5 +1,5 @@
 <!-- <h1>My Outfits</h1> -->
-<!-- 
+<!--
 <%# @outfits.each do |o|%>
 <strong>Type of Outfit:</strong><br>
 <%#= o.type_of_outfit %><br>
@@ -23,7 +23,7 @@
 <%end%>
 
 <div ng-app="outfit-app" ng-controller="OutfitCtrl" class="container" >
-    <h1 class="page_titles">OUTFITS</h1>
+    <h1 class="page_titles">Outfits</h1>
     <div class="form-group">
       <input ng-model="searchOutfit" name="searchbox" type="text" class="form-control search" id="searchbar" placeholder="Search">
     </div><br>
@@ -104,12 +104,12 @@
             </div>
             <div>
 
-              <input ng-model="outfit.accessories" type="text" name="accessories" class="form-control" placeholder="Accessories"> 
+              <input ng-model="outfit.accessories" type="text" name="accessories" class="form-control" placeholder="Accessories">
             </div>
             <div>
               <input ng-model="outfit.sender_comment" type="text" name="sender_comment" class="form-control" placeholder="Comment">
             </div>
-          
+
             <div>
             <button type="submit" ng-click="updateOutfit(outfit)" class="btn btn-primary large">Update</button>
           <!--   <button type="submit" ng-click="backOutfit(outfit)" class="btn btn-primary small">Back</button> -->
