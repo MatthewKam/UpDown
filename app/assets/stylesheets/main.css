@@ -36,15 +36,16 @@ h1,
 h2 {
   font-family: 'Playball', cursive;
 }
-
-/* Slide 1 */
-#slide-1 .bcg {
-  background-image:url('homeimg4.jpg');
-  background-size: cover;
+.homeSlide{
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
   background-position: center;
-  height: 805px;
-  width: 1440px;
-padding-top: 50px;
+}
+/* Slide 1 */
+#slide-1{
+  background-image:url('homeimg4.jpg');
+  
 }
 .hsContent1 {
   /*height: 100%;
@@ -75,7 +76,7 @@ padding-top: 50px;
 
 
 /* Slide 2 */
-#slide-2 .bcg {
+#slide-2  {
   background-image:url('homeimg2.jpg');
   background-position: center;
   border-color: black;
@@ -111,7 +112,7 @@ padding-top: 50px;
 }
 
 /* Slide 3 */
-#slide-3 .bcg {
+#slide-3 {
   background-image:url('homeimg1.jpg');
   background-position: center;
 }
