@@ -34,7 +34,11 @@ div.hsContainer {
 
 h1,
 h2 {
-  font-family: 'Playball', cursive;
+  /*font-family: 'Playball', cursive;*/
+  font-family: 'IM Fell English', serif;
+}
+p {
+  font-family: 'Nothing You Could Do', cursive;
 }
 .homeSlide{
   background-repeat: no-repeat;
@@ -44,8 +48,10 @@ h2 {
 }
 /* Slide 1 */
 #slide-1{
-  background-image:url('homeimg4.jpg');
-  
+  background-image:url('homeimg6.jpg');
+  background-size: cover;
+  width: 100%;
+  height: 100%;
 }
 .hsContent1 {
   /*height: 100%;
@@ -53,8 +59,25 @@ h2 {
   /*margin:325px 0 150px 0;*/
   margin: 0 auto;
   text-align: center;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+}
+.hsContent1 #logo {
+  background-image:url('updownlogo.jpg');
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin: 0 auto;
+  z-index: -1;
+  border-radius: 110px;
+  margin-top: -8em;
+  margin-bottom: 2em;
+}
+#logo h1{
+  margin: 0 auto;
+  padding-top: 1.5em;
 }
 #liform{
 /*  height: 300px;
@@ -63,15 +86,16 @@ h2 {
   background-color:rgba(0,0,0,.3);
 }
 .login #liform {
-  margin-left: 33%;
+  margin-left: 0 auto;
   font-family: 'Poiret One', cursive;
   font-weight: bolder;
-  border: 3px solid black;
+  border: 5px solid black;
   height: 300px;
   width: 400px;
 }
-#liform h1 {
+#liform h2 {
   margin-top: .7em;
+  color: white;
 }
 
 
@@ -81,7 +105,7 @@ h2 {
   background-position: center;
   border-color: black;
   border-style: solid;
-  border-width: 5px 0 5px 0;
+  /*border-width: 5px 0 5px 0;*/
 }
 .hsContent2{
   width:100%;
@@ -92,7 +116,7 @@ h2 {
  }
 .hsContent2 div{
   display:inline-block;
-  border: 3px solid black;
+  border: 5px solid black;
  }
 #aboutinfo{
   padding-top:60px;
@@ -108,7 +132,6 @@ h2 {
   font-size: 20px;
   color:white;
   line-height: 120%;
-  font-family: 'Poiret One', cursive;
 }
 
 /* Slide 3 */
@@ -126,12 +149,7 @@ h2 {
   margin-top: 40px;
 }
 
-
-
-
 @media screen and (max-width:600px) {
-
-
 
   #gmainfo {
     width: 300px;

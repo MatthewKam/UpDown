@@ -4,16 +4,19 @@
       <div class="bcg">
         <div class="hsContainer">
           <div class="hsContent1">
+            <div id="logo">
+              <h1>UpDown</h1>
+            </div>
             <div class="login">
 							<div id="liform">
-								<h1>Log In</h1>
+								<h2>Log In</h2>
 								<%= form_for :session, :url => sessions_path do |f| %>
 									<%= f.text_field :email, placeholder: "Email"%>
 									<%= f.text_field :password, placeholder: "Password"%>
 									<%= f.submit 'Done'%>
 								<%end%>
 								<br>
-								<%= link_to 'Not a user? Create an account', new_user_path %>
+								<%= link_to 'Not a user? Create an account', new_user_path, {:style=> "font-family: 'Nothing You Could Do', cursive"} %>
 							</div>
           </div>
         </div>

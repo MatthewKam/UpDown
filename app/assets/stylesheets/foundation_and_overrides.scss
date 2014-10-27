@@ -43,7 +43,7 @@
 // We use these to control various global styles
 // $body-bg: #fff;
 // $body-font-color: #1f455c;
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-family: 'Nothing You Could Do', cursive;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
 
@@ -149,7 +149,7 @@
 // $small-font-color: scale-color($header-font-color, $lightness: 35%);
 
 // We use these to style paragraphs
-// $paragraph-font-family: inherit;
+$paragraph-font-family: 'Nothing You Could Do', cursive;
 // $paragraph-font-weight: $font-weight-normal;
 // $paragraph-font-size: 1rem;
 $paragraph-line-height: 0.7;
@@ -167,8 +167,8 @@ $paragraph-line-height: 0.7;
 // We use these to style anchors
 // $anchor-text-decoration: none;
 // $anchor-text-decoration-hover: none;
-// $anchor-font-color: $primary-color;
-// $anchor-font-color-hover: scale-color($primary-color, $lightness: -14%);
+ $anchor-font-color: white;
+ $anchor-font-color-hover: scale-color(black, $lightness: -37%);
 
 // We use these to style the <hr> element
 // $hr-border-width: 1px;
@@ -341,7 +341,7 @@ $blockquote-cite-link-color: #1f455c;
 // $button-margin-bottom: rem-calc(20);
 
 // We use these to control button text styles.
-// $button-font-family: $body-font-family;
+$button-font-family: 'Nothing You Could Do', cursive;
 // $button-font-color: #fff;
 // $button-font-color-alt: #333;
 // $button-font-tny: rem-calc(11);
@@ -514,7 +514,7 @@ $blockquote-cite-link-color: #1f455c;
 // $form-label-font-color: scale-color(#000, $lightness: 30%);
 // $form-label-small-transform: capitalize;
 // $form-label-bottom-margin: 0;
-// $input-font-family: inherit;
+$input-font-family: 'Nothing You Could Do', cursive;
 // $input-font-color: rgba(0,0,0,0.75);
 // $input-font-size: rem-calc(14);
 // $input-bg-color: #fff;
@@ -655,7 +655,7 @@ $blockquote-cite-link-color: #1f455c;
 // $label-font-weight: $font-weight-normal;
 // $label-font-color: #333;
 // $label-font-color-alt: #fff;
-// $label-font-family: $body-font-family;
+$label-font-family: 'Nothing You Could Do', cursive;
 
 // Magellan
 
